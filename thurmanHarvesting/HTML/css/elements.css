@@ -1,0 +1,2716 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Sanchez:400italic,400);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+/* ========================================================================== */
+/* ========================================================================== */
+							/* [Table of contents] */
+/* ========================================================================== */
+/* ========================================================================== */
+
+/*	
+
+    1. ACCORDIONS.	
+    2. ALERTS.	
+    3. ANIMATIONS.	
+    4. BLOCKQUOTES.	
+    5. BREADCRUMBS.	
+    6. BUTTOMS.	
+    7. CALL TO ACTION.	
+    8. CHARTS.	
+    9. CONTENT BOXES.	
+    10. COUNTERS.		
+
+		
+*/ 
+
+/*###################################
+  ---------- 1 COMMON CSS. ----------
+  ###################################*/
+.elements-title{
+    text-align: center;
+    width: 50%;
+    margin: auto auto 2rem;
+}
+
+.elements-title h2{
+    text-align: center;
+}
+
+.elements-title p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+h3, .h3 {
+  font-size: 0.90rem;
+  color: #333;
+  font-weight: 500;
+  text-rendering: auto;
+}
+
+/*####################################
+  ---------- 1. ACCORDIONS. ----------
+  ####################################*/
+
+/*---------- ACCORDION STYLE 1 ---------- */
+.accordion {
+    border-top: 1px solid #d9e5e8;
+}
+
+.accordion li {
+    border-bottom: 1px solid #d9e5e8;
+    position: relative;
+    list-style-type:none;
+}
+
+.accordion li p {
+    display: none;
+    padding: 10px 20px 20px;
+    color: #516163;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion a {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 3;
+    font-size: 16px;
+    user-select: none;
+}
+
+.accordion li a.active{
+    color: #FF404C;
+}
+
+.accordion a.hover{
+    color: #FF404C;
+}
+
+.accordion a:after {
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #FF404C;
+    border-bottom: 1px solid #FF404C;
+    position: absolute;
+    right: 5px;
+    content: " ";
+    top: 20px;
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a.active:after {
+    transform: rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-right: 1px solid #FF404C;
+    border-bottom: 1px solid #FF404C;
+}
+
+/*---------- ACCORDION STYLE 2 ---------- */
+.accordion-style-2 .accordion {
+    border: 1px solid #d9e5e8;
+    padding: 0px 20px;
+}
+
+.accordion li {
+    border-bottom: 1px solid #d9e5e8;
+    position: relative;
+    list-style-type:none;
+}
+
+.accordion li p {
+    display: none;
+    padding: 10px 20px 20px;
+    color: #516163;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion a {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 3;
+    font-size: 16px;
+    user-select: none;
+}
+
+.accordion li a.active{
+    color: #FF404C;
+}
+
+.accordion a.hover{
+    color: #FF404C;
+}
+
+.accordion-style-2 .accordion a:after {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067";
+    border:none;
+    transform: none;
+    color: #FF404C;
+}
+
+.accordion-style-2 a.active:after {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border:none;
+    transform: none;
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f068";
+}
+
+.accordion-style-2 .last-item{
+    border-bottom: none;
+}
+
+/*---------- ACCORDION STYLE 3 ---------- */
+.accordion-style-3 .accordion {
+   border-top: 1px solid #FFF;
+   background: #F7FAFA;
+   padding: 0px 20px;
+}
+
+.accordion-style-3 .accordion li {
+    border-bottom: 2px solid #fff;
+    position: relative;
+    list-style-type:none;
+}
+
+.accordion li p {
+    display: none;
+    padding: 10px 20px 20px;
+    color: #516163;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion a {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 3;
+    font-size: 16px;
+    user-select: none;
+}
+
+.accordion li a.active{
+    color: #FF404C;
+}
+
+.accordion a.hover{
+    color: #FF404C;
+}
+
+.accordion-style-3 .accordion a:after {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #FF404C;
+    border-bottom: 2px solid #FF404C;
+    position: absolute;
+    right: 5px;
+    content: " ";
+    top: 20px;
+    transform: rotate(-45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion-style-3 a.active:after {
+    transform: rotate(45deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border-right: 1px solid #FF404C;
+    border-bottom: 1px solid #FF404C;
+}
+
+.accordion-style-3 .accordion .last-item{
+    border-bottom: none;
+}
+
+/*################################
+  ---------- 2. ALERTS. ----------
+  ################################*/
+.alert {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  color: #FFF;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: .2;
+  padding-right: 20px;
+}
+
+.alert-success {
+  color: #fff;
+  background-color: #76bf5a;
+  border-color: #76bf5a;
+  font-size: 16px;
+}
+
+.alert-success. fa{
+    font-size: 20px;
+}
+
+.alert-info {
+  color: #FFF;
+  background-color: #42a5d7;
+  border-color: #42a5d7;
+  font-size: 16px;
+}
+
+.alert-info .fa{
+    font-size: 20px;
+}
+
+.alert-warning {
+  color: #FFF;
+  background-color: #e7c418;
+  border-color: #e7c418;
+  font-size: 16px;
+}
+
+.alert-warning .fa{
+    font-size: 20px;
+}
+
+.alert-danger {
+  color: #FFF;
+  background-color: #be5b5b;
+  border-color: #be5b5b;
+  font-size: 16px;
+}
+
+.alert-danger .fa{
+    font-size: 20px;
+}
+
+/*####################################
+  ---------- 3. ANIMATIONS. ----------
+  ####################################*/
+.animate-box{
+    width: 100%;
+    height: 100%;
+    background: #F7FAFA;
+    padding: 40px 10px 60px 10px; 
+}
+
+.animate-box .fa{
+    font-size: 40px;
+    color: #FF404C;
+    margin-bottom: 10px;
+}
+
+.animate-box p{
+    text-align: center;
+}
+
+.animate-box h4{
+    text-align: center;
+    color: #333;
+    margin: 5px 0px 10px 0px;
+}
+
+/*#####################################
+  ---------- 4. BLOCKQUOTES. ----------
+  #####################################*/
+
+.brooks {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-family: 'Sanchez', serif;
+}
+.brooks:before {
+  content: '\201C';
+  position: absolute;
+  top: 0.25em;
+  left: -0.15em;
+  color: #e7e6e4;
+  font-size: 6em;
+  z-index: -1;
+}
+
+.ludwig {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid #FF404C;
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+.ludwig:before, .ludwig:after {
+  content: '\201C';
+  font-family: 'Sanchez';
+  color: #FF404C;
+}
+.ludwig:after {
+  content: '\201D';
+}
+
+.groucho {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.groucho blockquote-author {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.6em;
+  font-weight: 700;
+  color: #d3d3cf;
+  float: right;
+}
+.groucho blockquote-author:before {
+  content: '\2015';
+}
+.groucho:after {
+  content: '\201D';
+  position: absolute;
+  top: 0.28em;
+  right: 0;
+  font-size: 6em;
+  font-style: italic;
+  color: #e7e6e4;
+  z-index: -1;
+}
+
+/*#####################################
+  ---------- 5. BREADCRUMBS. ----------
+  ####################################*/
+.cd-breadcrumb, .cd-multi-steps {
+  width: 90%;
+  padding: 0.5em 1em;
+  margin: 1em auto;
+  background-color: #F7FAFA;
+  border-radius: .25em;
+}
+.cd-breadcrumb:after, .cd-multi-steps:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-breadcrumb li, .cd-multi-steps li {
+  display: inline-block;
+  float: left;
+  margin: 0.5em 0;
+}
+.cd-breadcrumb li::after, .cd-multi-steps li::after {
+  /* this is the separator between items */
+  display: inline-block;
+  content: '\00bb';
+  margin: 0 .6em;
+  color: #959fa5;
+}
+.cd-breadcrumb li:last-of-type::after, .cd-multi-steps li:last-of-type::after {
+  /* hide separator after the last item */
+  display: none;
+}
+.cd-breadcrumb li > *, .cd-multi-steps li > * {
+  /* single step */
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #2c3f4c;
+  font-family: 'Poppins', sans-serif;
+}
+.cd-breadcrumb li.current > *, .cd-multi-steps li.current > * {
+  /* selected step */
+  color: #96c03d;
+}
+.no-touch .cd-breadcrumb a:hover, .no-touch .cd-multi-steps a:hover {
+  /* steps already visited */
+  color: #96c03d;
+}
+.cd-breadcrumb.custom-separator li::after, .cd-multi-steps.custom-separator li::after {
+  /* replace the default arrow separator with a custom icon */
+  content: '';
+  height: 16px;
+  width: 16px;
+  background: url(../img/master/cd-custom-separator.svg) no-repeat center center;
+  vertical-align: middle;
+}
+.cd-breadcrumb.custom-icons li > *::before, .cd-multi-steps.custom-icons li > *::before {
+  /* add a custom icon before each item */
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-right: .4em;
+  margin-top: -2px;
+  background: url(../img/master/cd-custom-icons-01.svg) no-repeat 0 0;
+  vertical-align: middle;
+}
+.cd-breadcrumb.custom-icons li:not(.current):nth-of-type(2) > *::before, .cd-multi-steps.custom-icons li:not(.current):nth-of-type(2) > *::before {
+  /* change custom icon using image sprites */
+  background-position: -20px 0;
+}
+.cd-breadcrumb.custom-icons li:not(.current):nth-of-type(3) > *::before, .cd-multi-steps.custom-icons li:not(.current):nth-of-type(3) > *::before {
+  background-position: -40px 0;
+}
+.cd-breadcrumb.custom-icons li:not(.current):nth-of-type(4) > *::before, .cd-multi-steps.custom-icons li:not(.current):nth-of-type(4) > *::before {
+  background-position: -60px 0;
+}
+.cd-breadcrumb.custom-icons li.current:first-of-type > *::before, .cd-multi-steps.custom-icons li.current:first-of-type > *::before {
+  /* change custom icon for the current item */
+  background-position: 0 -20px;
+}
+.cd-breadcrumb.custom-icons li.current:nth-of-type(2) > *::before, .cd-multi-steps.custom-icons li.current:nth-of-type(2) > *::before {
+  background-position: -20px -20px;
+}
+.cd-breadcrumb.custom-icons li.current:nth-of-type(3) > *::before, .cd-multi-steps.custom-icons li.current:nth-of-type(3) > *::before {
+  background-position: -40px -20px;
+}
+.cd-breadcrumb.custom-icons li.current:nth-of-type(4) > *::before, .cd-multi-steps.custom-icons li.current:nth-of-type(4) > *::before {
+  background-position: -60px -20px;
+}
+@media only screen and (min-width: 768px) {
+  .cd-breadcrumb, .cd-multi-steps {
+    padding: 0 1.2em;
+  }
+  .cd-breadcrumb li, .cd-multi-steps li {
+    margin: 0.5em 0;
+  }
+  .cd-breadcrumb li::after, .cd-multi-steps li::after {
+    margin: 0 1em;
+  }
+  .cd-breadcrumb li > *, .cd-multi-steps li > * {
+      font-size: 16px;
+      font-weight: 400;
+  }
+}
+
+/* -------------------------------- 
+
+Triangle breadcrumb
+
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+  .cd-breadcrumb.triangle {
+    /* reset basic style */
+    background-color: transparent;
+    padding: 0;
+  }
+  .cd-breadcrumb.triangle li {
+    position: relative;
+    padding: 0;
+    margin: 4px 4px 4px 0;
+  }
+  .cd-breadcrumb.triangle li:last-of-type {
+    margin-right: 0;
+  }
+  .cd-breadcrumb.triangle li > * {
+    position: relative;
+    padding: 1em .8em 1em 2.5em;
+    color: #2c3f4c;
+    background-color: #edeff0;
+    /* the border color is used to style its ::after pseudo-element */
+    border-color: #edeff0;
+  }
+  .cd-breadcrumb.triangle li.current > * {
+    /* selected step */
+    color: #ffffff;
+    background-color: #96c03d;
+    border-color: #96c03d;
+  }
+  .cd-breadcrumb.triangle li:first-of-type > * {
+    padding-left: 1.6em;
+    border-radius: .25em 0 0 .25em;
+  }
+  .cd-breadcrumb.triangle li:last-of-type > * {
+    padding-right: 1.6em;
+    border-radius: 0 .25em .25em 0;
+  }
+  .no-touch .cd-breadcrumb.triangle a:hover {
+    /* steps already visited */
+    color: #ffffff;
+    background-color: #2c3f4c;
+    border-color: #2c3f4c;
+  }
+  .cd-breadcrumb.triangle li::after, .cd-breadcrumb.triangle li > *::after {
+    /* 
+    	li > *::after is the colored triangle after each item
+    	li::after is the white separator between two items
+    */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    content: '';
+    height: 0;
+    width: 0;
+    /* 48px is the height of the <a> element */
+    border: 24px solid transparent;
+    border-right-width: 0;
+    border-left-width: 20px;
+  }
+  .cd-breadcrumb.triangle li::after {
+    /* this is the white separator between two items */
+    z-index: 1;
+    -webkit-transform: translateX(4px);
+    -moz-transform: translateX(4px);
+    -ms-transform: translateX(4px);
+    -o-transform: translateX(4px);
+    transform: translateX(4px);
+    border-left-color: #ffffff;
+    /* reset style */
+    margin: 0;
+  }
+  .cd-breadcrumb.triangle li > *::after {
+    /* this is the colored triangle after each element */
+    z-index: 2;
+    border-left-color: inherit;
+  }
+  .cd-breadcrumb.triangle li:last-of-type::after, .cd-breadcrumb.triangle li:last-of-type > *::after {
+    /* hide the triangle after the last step */
+    display: none;
+  }
+  .cd-breadcrumb.triangle.custom-separator li::after {
+    /* reset style */
+    background-image: none;
+  }
+  .cd-breadcrumb.triangle.custom-icons li::after, .cd-breadcrumb.triangle.custom-icons li > *::after {
+    /* 50px is the height of the <a> element */
+    border-top-width: 25px;
+    border-bottom-width: 25px;
+  }
+
+  @-moz-document url-prefix() {
+    .cd-breadcrumb.triangle li::after,
+    .cd-breadcrumb.triangle li > *::after {
+      /* fix a bug on Firefix - tooth edge on css triangle */
+      border-left-style: dashed;
+    }
+  }
+}
+/* -------------------------------- 
+
+Custom icons hover effects - breadcrumb and multi-steps
+
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+  .no-touch .cd-breadcrumb.triangle.custom-icons li:first-of-type a:hover::before, .cd-breadcrumb.triangle.custom-icons li.current:first-of-type em::before, .no-touch .cd-multi-steps.text-center.custom-icons li:first-of-type a:hover::before, .cd-multi-steps.text-center.custom-icons li.current:first-of-type em::before {
+    /* change custom icon using image sprites - hover effect or current item */
+    background-position: 0 -40px;
+  }
+  .no-touch .cd-breadcrumb.triangle.custom-icons li:nth-of-type(2) a:hover::before, .cd-breadcrumb.triangle.custom-icons li.current:nth-of-type(2) em::before, .no-touch .cd-multi-steps.text-center.custom-icons li:nth-of-type(2) a:hover::before, .cd-multi-steps.text-center.custom-icons li.current:nth-of-type(2) em::before {
+    background-position: -20px -40px;
+  }
+  .no-touch .cd-breadcrumb.triangle.custom-icons li:nth-of-type(3) a:hover::before, .cd-breadcrumb.triangle.custom-icons li.current:nth-of-type(3) em::before, .no-touch .cd-multi-steps.text-center.custom-icons li:nth-of-type(3) a:hover::before, .cd-multi-steps.text-center.custom-icons li.current:nth-of-type(3) em::before {
+    background-position: -40px -40px;
+  }
+  .no-touch .cd-breadcrumb.triangle.custom-icons li:nth-of-type(4) a:hover::before, .cd-breadcrumb.triangle.custom-icons li.current:nth-of-type(4) em::before, .no-touch .cd-multi-steps.text-center.custom-icons li:nth-of-type(4) a:hover::before, .cd-multi-steps.text-center.custom-icons li.current:nth-of-type(4) em::before {
+    background-position: -60px -40px;
+  }
+}
+/* -------------------------------- 
+
+Multi steps indicator 
+
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+  .cd-multi-steps {
+    /* reset style */
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+  }
+
+  .cd-multi-steps li {
+    position: relative;
+    float: none;
+    margin: 0.4em 40px 0.4em 0;
+  }
+  .cd-multi-steps li:last-of-type {
+    margin-right: 0;
+  }
+  .cd-multi-steps li::after {
+    /* this is the line connecting 2 adjacent items */
+    position: absolute;
+    content: '';
+    height: 4px;
+    background: #edeff0;
+    /* reset style */
+    margin: 0;
+  }
+  .cd-multi-steps li.visited::after {
+    background-color: #96c03d;
+  }
+  .cd-multi-steps li > *, .cd-multi-steps li.current > * {
+    position: relative;
+    color: #2c3f4c;
+  }
+
+  .cd-multi-steps.custom-separator li::after {
+    /* reset style */
+    height: 4px;
+    background: #edeff0;
+  }
+
+  .cd-multi-steps.text-center li::after {
+    width: 100%;
+    top: 50%;
+    left: 100%;
+    -webkit-transform: translateY(-50%) translateX(-1px);
+    -moz-transform: translateY(-50%) translateX(-1px);
+    -ms-transform: translateY(-50%) translateX(-1px);
+    -o-transform: translateY(-50%) translateX(-1px);
+    transform: translateY(-50%) translateX(-1px);
+  }
+  .cd-multi-steps.text-center li > * {
+    z-index: 1;
+    padding: .6em 1em;
+    border-radius: .25em;
+    background-color: #edeff0;
+  }
+  .no-touch .cd-multi-steps.text-center a:hover {
+    background-color: #2c3f4c;
+  }
+  .cd-multi-steps.text-center li.current > *, .cd-multi-steps.text-center li.visited > * {
+    color: #ffffff;
+    background-color: #96c03d;
+  }
+  .cd-multi-steps.text-center.custom-icons li.visited a::before {
+    /* change the custom icon for the visited item - check icon */
+    background-position: 0 -60px;
+  }
+
+  .cd-multi-steps.text-top li, .cd-multi-steps.text-bottom li {
+    width: 80px;
+    text-align: center;
+  }
+  .cd-multi-steps.text-top li::after, .cd-multi-steps.text-bottom li::after {
+    /* this is the line connecting 2 adjacent items */
+    position: absolute;
+    left: 50%;
+    /* 40px is the <li> right margin value */
+    width: calc(100% + 40px);
+  }
+  .cd-multi-steps.text-top li > *::before, .cd-multi-steps.text-bottom li > *::before {
+    /* this is the spot indicator */
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #edeff0;
+  }
+  .cd-multi-steps.text-top li.visited > *::before,
+  .cd-multi-steps.text-top li.current > *::before, .cd-multi-steps.text-bottom li.visited > *::before,
+  .cd-multi-steps.text-bottom li.current > *::before {
+    background-color: #96c03d;
+  }
+  .no-touch .cd-multi-steps.text-top a:hover, .no-touch .cd-multi-steps.text-bottom a:hover {
+    color: #96c03d;
+  }
+  .no-touch .cd-multi-steps.text-top a:hover::before, .no-touch .cd-multi-steps.text-bottom a:hover::before {
+    box-shadow: 0 0 0 3px rgba(150, 192, 61, 0.3);
+  }
+
+  .cd-multi-steps.text-top li::after {
+    /* this is the line connecting 2 adjacent items */
+    bottom: 4px;
+  }
+  .cd-multi-steps.text-top li > * {
+    padding-bottom: 20px;
+  }
+  .cd-multi-steps.text-top li > *::before {
+    /* this is the spot indicator */
+    bottom: 0;
+  }
+
+  .cd-multi-steps.text-bottom li::after {
+    /* this is the line connecting 2 adjacent items */
+    top: 3px;
+  }
+  .cd-multi-steps.text-bottom li > * {
+    padding-top: 20px;
+  }
+  .cd-multi-steps.text-bottom li > *::before {
+    /* this is the spot indicator */
+    top: 0;
+  }
+}
+/* -------------------------------- 
+
+Add a counter to the multi-steps indicator 
+
+-------------------------------- */
+.cd-multi-steps.count li {
+  counter-increment: steps;
+}
+
+.cd-multi-steps.count li > *::before {
+  content: counter(steps) " - ";
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-multi-steps.text-top.count li > *::before,
+  .cd-multi-steps.text-bottom.count li > *::before {
+    /* this is the spot indicator */
+    content: counter(steps);
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  .cd-multi-steps.text-top.count li:not(.current) em::before,
+  .cd-multi-steps.text-bottom.count li:not(.current) em::before {
+    /* steps not visited yet - counter color */
+    color: #2c3f4c;
+  }
+
+  .cd-multi-steps.text-top.count li::after {
+    bottom: 11px;
+  }
+
+  .cd-multi-steps.text-top.count li > * {
+    padding-bottom: 34px;
+  }
+
+  .cd-multi-steps.text-bottom.count li::after {
+    top: 11px;
+  }
+
+  .cd-multi-steps.text-bottom.count li > * {
+    padding-top: 34px;
+  }
+}
+
+
+/*#################################
+  ---------- 6. BUTTOMS. ----------
+  #################################*/
+
+/*########################################
+  ---------- 7. CALL TO ACTION. ----------
+  ########################################*/
+.call-to-action{
+    background: #F7FAFA;
+    height: 5rem;
+    position: relative;
+}
+
+.call-left{
+    float: left;
+    padding: 1.3rem 1rem;
+    text-align: left;
+}
+
+.call-right{
+    float: right;
+    padding: 1.5rem 1rem;
+}
+
+.call-caption{
+    
+}
+
+.call-caption h3{
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*################################
+  ---------- 8. CHARTS. ----------
+  ################################*/
+
+
+/*#######################################
+  ---------- 9. CONTENT BOXES. ----------
+  #######################################*/
+
+/*---------- CONTENT BOX STYLE 1 ---------- */
+.content-box-1{
+    background-color: #F6F6F6;
+    height: 100%;
+    padding: 40px 10px; 
+    text-align: center;
+    transition: 0.3s;
+}
+
+.content-box-1 p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.content-box-1 .icon-circle{
+    width: 70px;
+    height: 70px;
+    background: #999999;
+    border-radius: 50%;
+    position: relative;
+    margin: auto auto 20px;
+    transition: 0.3s;
+}
+
+.content-box-1:hover .icon-circle{
+    background: #FF404C;
+
+}
+
+.content-box-1 .icon-circle .fas{
+    font-size: 35px;
+    line-height: 70px;
+    background: transparent;
+    color: #FFF;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.content-box-1 h3{
+   transition: 0.3s;
+}
+
+.content-box-1:hover h3{
+   color: #FF404C;
+}
+
+.middle-box{
+    border-left: solid 2px #FFF;
+    border-right: solid 2px #FFF;
+}
+
+/*---------- CONTENT BOX STYLE 2 ---------- */
+.content-box-top-icon{
+    background-color: #F6F6F6;
+    height: 100%;
+    padding: 40px 20px 10px; 
+    text-align: center;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.content-box-top-icon .icon-circle{
+    width: 90px;
+    height: 90px;
+    background: #999999;
+    border-radius: 50%;
+    position: relative;
+    margin: -80px auto 20px;
+    transition: 0.3s;
+}
+
+.content-box-top-icon .icon-circle .fas{
+    font-size: 40px;
+    line-height: 90px;
+    background: transparent;
+    color: #FFF;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.content-box-top-icon p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/*---------- CONTENT BOX STYLE 3 ---------- */
+.grid-content-box{
+    background-color: #F6F6F6;
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.darker-bg{
+    background-color: #e6e6e6;
+}
+
+.grid-content-box .icon-circle{
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+    border-radius: 50%;
+    position: relative;
+    margin: auto auto 15px;
+    transition: 0.3s;
+}
+
+.grid-content-box .icon-circle .fas{
+    font-size: 40px;
+    line-height: 100px;
+    background: transparent;
+    color: #FF404C;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.grid-content-box  p{
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 0px;
+}
+
+/*---------- CONTENT BOX STYLE 4 ---------- */
+
+.hover-content-box{
+    text-align: center;
+}
+
+.outer-circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px #FF404C;
+    position: relative;
+    margin: auto auto 20px;
+    transition: 0.3s;
+}
+
+.hover-content-box:hover .outer-circle{
+    background-color: #FF404C;
+
+}
+
+.inner-circle{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    background-color: #FF404C;
+    border-radius: 50%;
+}
+
+.hover-content-box .icon-circle .fas{
+    font-size: 40px;
+    line-height: 80px;
+    background: transparent;
+    color: #FFF;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.hover-content-box p{
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/*---------- CONTENT BOX STYLE 5 ---------- */
+.info-box{
+    background-color: #F6F6F6;
+    padding: 40px 40px 60px;
+}
+
+.left-icon-circle{
+    width: 100px;
+    height: 100px;
+    background: #FF404C;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.3s;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 80px;
+}
+
+.left-icon-circle .fas{
+    font-size: 50px;
+    line-height: 100px;
+    background: transparent;
+    color: #FFF;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.box-caption h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.box-caption p{
+    font-weight: 13px;
+    line-height: 1.7;
+}
+
+.box-footer{
+    width: 100%;
+    height: 40px;
+    background-color: #FF404C;
+    padding: 5px;
+}
+
+.box-footer p{
+    color: #FFF;
+    text-align: center;
+    
+}
+
+/*###################################
+  ---------- 10. COUNTERS. ----------
+  ###################################*/
+
+/*---------- COUNTER BOX STYLE 1 ---------- */
+.counter-box{
+    text-align: center;
+}
+
+.counter-icon .fas{
+    color: #FF404C;
+    font-size: 2rem;
+}
+
+.counter{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.counter-box h4{
+    color: #677C7E;
+    font-weight: 400;
+    font-size: 0.70rem; 
+}
+
+/*---------- COUNTER BOX STYLE 2 ---------- */
+
+.counter-box-border{
+    text-align: center;
+    border: solid 1px #ddd;
+    padding: 40px 15px;
+}
+
+/*---------- COUNTER BOX STYLE 2 ---------- */
+.outstanding-stat .counter{
+    font-size: 2rem;
+}
+
+.outstanding-stat .counter-statistics p{
+    line-height: 1.5;
+}
+
+/*####################################
+  ---------- 11. CUSTOMERS. ----------
+  ####################################*/
+.customer-logos .slick-slide img{
+    width: 100%;
+}
+
+.customer-logos .slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.customer-logos .slick-track:before,
+.customer-logos .slick-track:after{
+    display: table;
+    content: '';
+}
+
+.customer-logos .slick-track:after{
+    clear: both;
+}
+
+.customer-logos .slick-loading .slick-track{
+    visibility: hidden;
+}
+
+.customer-logos .slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide{
+    float: right;
+}
+
+.customer-logos .slick-slide img{
+    display: block;
+}
+
+.customer-logos .slick-slide.slick-loading img{
+    display: none;
+}
+
+.customer-logos .slick-slide.dragging img{
+    pointer-events: none;
+}
+
+.customer-logos .slick-initialized .slick-slide{
+    display: block;
+}
+
+.customer-logos .slick-loading .slick-slide{
+    visibility: hidden;
+}
+
+.customer-logos .slick-vertical .slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.customer-logos .slick-arrow.slick-hidden{
+    display: none;
+}
+
+/* ===== CUSTOMER 4 GRID =====*/
+.customer-column-4{
+    border-right: dotted 1px #ddd;
+    border-bottom: dotted 1px #ddd;
+    padding: 40px;
+}
+
+figure.client-logo img{
+    width: 100%;
+}
+
+.last-grid{
+    border-right: none;
+}
+
+.desktop-bottom-grip{
+    border-bottom: none;
+}
+
+/* ===== CUSTOMER WIDE =====*/
+figure.wide-clients img{
+    width: 100%;
+}
+
+/*###################################
+  ---------- 12. DROPCAPS. ----------
+  ###################################*/
+
+/* ========== #DROPCAPS STYLE 1 ========== */
+.dropcaps p{
+    line-height: 1.7;
+}
+
+span-dropcaps{
+    font-size: 40px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+span-dropcaps-color{
+    font-size: 40px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #FF404C;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 10px;
+    color: #FFF; 
+}
+
+color-text{
+    background: #FF404C;
+    color: #fff;
+    padding: 3px 2px 3px 2px;
+}
+
+/* ========== #DROPCAPS STYLE 2 ========== */
+
+span-dropcaps-rounded{
+    font-size: 40px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+
+span-dropcaps-color-rounded{
+    font-size: 40px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #FF404C;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 10px;
+    color: #FFF;
+    border-radius: 50%; 
+}
+
+color-text-2{
+    background: #333;
+    color: #fff;
+    padding: 3px 2px 3px 2px;
+}
+
+/* ========== #DROPCAPS STYLE 3 ========== */
+
+.dropcaps-small p{
+    line-height: 1.7;
+}
+
+.dropcaps-small span-dropcaps{
+    font-size: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.dropcaps-small span-dropcaps-color-rounded{
+    font-size: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #FF404C;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+    color: #FFF; 
+}
+
+.dropcaps-small color-text{
+    background: #FF404C;
+    color: #fff;
+    padding: 3px 2px 3px 2px;
+}
+
+
+/*#####################################
+  ---------- 13. FLIP BOXES. ----------
+  #####################################*/
+
+/* ========== #FLIP BOXES STYLE 1 ========== */
+
+.flip-boxes{
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    padding: 30px 20px; 
+}
+
+.flip-boxes .fa{
+    font-size: 40px;
+    color: #00a4e6;
+    margin-bottom: 10px;
+}
+
+.flip-boxes p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.flip-boxes h3{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.flip-boxes .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border: solid 1px #00a4e6;
+    border-radius: 50%;
+    padding: 18px 15px 18px 15px;
+    transition: 0.3s;
+}
+
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 270px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}
+
+.back .flip-boxes{
+    background-color: #00a4e6;
+    color: #FFF;
+    padding: 60px 15px 40px 15px;
+}
+
+.back .flip-boxes h3{
+    color: #FFF;
+    font-size: 25px;
+}
+
+.back .flip-boxes p{
+    color: #FFF;
+    margin-top: 10px;
+}
+
+.btn-flip-boxes{
+    display: inline-block;
+    padding: 8px 26px;
+    border: 1px solid #FFF;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.btn-flip-boxes:hover {
+  color: #00a4e6;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+.btn-flip-boxes:focus,
+.btn-flip-boxes.focus {
+  color: #00a4e6;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+/* ========== #FLIP BOXES UP AND DOWN ========== */
+.flip {
+  height: 280px;
+  cursor: pointer;
+  perspective: 800px;
+}
+.flip:hover > .flip-box.up {
+  transform: rotateX(180deg);
+}
+.flip:hover > .flip-box.down {
+  transform: rotateX(-180deg);
+}
+
+.flip .flip-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.6s;
+}
+
+.flip .flip-box .flip-side {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.flip .flip-box .flip-side.flip-front {
+  background: #f0f0f0;
+  padding: 30px 20px;
+}
+
+.flip .flip-box .flip-side.flip-back {
+  background: #00a4e6;
+  padding: 60px 15px 40px 15px;
+  color: #FFF;
+}
+
+.flip .flip-box.up .flip-back {
+  transform: rotateX(180deg);
+}
+
+.flip .flip-box.down .flip-back {
+  transform: rotateX(-180deg);
+}
+
+.flip .flip-box.left .flip-back {
+  transform: rotateY(-180deg);
+}
+
+.flip .flip-box.right .flip-back {
+  transform: rotateY(180deg);
+}
+
+.flip-front .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border: solid 1px #00a4e6;
+    border-radius: 50%;
+    padding: 18px 15px 18px 15px;
+    transition: 0.3s;
+}
+
+.flip-front p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.flip-front h3{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.flip-back h3{
+    color: #FFF;
+    font-size: 25px;
+}
+
+.flip-back p{
+    color: #FFF;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.flip-back .btn-flip-boxes{
+    display: inline-block;
+    padding: 8px 26px;
+    border: 1px solid #FFF;
+    font-size: 17px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #FFF;
+}
+
+.flip-back .btn-flip-boxes:hover {
+  color: #00a4e6;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+.flip-back .btn-flip-boxes:focus,
+.flip-back .btn-flip-boxes.focus {
+  color: #00a4e6;
+  background-color: #FFF;
+  border-color: #FFF;
+}
+
+/* ========== #FLIP BOXES 3D ========== */
+.flip-3d {
+    margin: 30px auto;
+    position: relative;
+    height: 100px;
+    background: #f0f0f0;
+    color: #333;
+    text-align:center;
+}
+.flip-3d h2 {
+    line-height: 100px;
+    margin:0;
+    padding:0;
+}
+.flip-3d h4 {
+    margin: 0;
+    padding: 16px 0 2px;
+}
+.flip-3d p {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0;
+    line-height: 1.6;
+}
+.default-state, .active-state {
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: transform 0.4s ease;
+    transform-origin: center center -50px;
+    -webkit-transform-origin: center center -50px;
+    width: 100%;
+}
+.default-state {
+    background-color: #f0f0f0;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+.active-state {
+    background: #f0f0f0;
+    transform: perspective(1000px) rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+}
+.flip-3d:hover .default-state {
+    transform: perspective(1000px) rotateX(90deg) rotateY(0) rotateZ(0deg);
+}
+.flip-3d:hover .active-state {
+    z-index: 99999;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0);
+}
+
+/*#####################################
+  ---------- 14. GRID BOXES. ----------
+  #####################################*/
+
+/* ========== GRID BOXES 1 ========== */
+.grid-box{
+    background-color: #FFF;
+    text-align: center;
+    padding: 3rem 2rem;
+    border-bottom: solid #ddd 1px;
+}
+
+.grid-icon .fas{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.center-grid{
+    border-left: solid #ddd 1px;
+    border-right: solid #ddd 1px;
+}
+
+.bottom-grid{
+    border-bottom: none;
+}
+
+.grid-box:hover{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+}
+
+.grid-box:before, .grid-box:after {
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+.grid-box:after{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.grid-box:hover .fas{
+    color: #FF404C;
+}
+
+/* ========== GRID BOXES 2 ========== */
+
+.grid-box-2{
+    background-color: #FFF;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-bottom: solid #ddd 1px;
+}
+
+.grid-icon-2 .fas{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.bottom-grid-2{
+    border-bottom: none;
+}
+
+.grid-box-2:hover{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+}
+
+.grid-box-2:hover .fas{
+    color: #FF404C;
+}
+
+/* ========== GRID BOXES 3 ========== */
+
+.grid-box-3{
+    text-align: center;
+    background-color: #FFF;
+    padding: 30px 15px;
+    border-right: solid #ddd 1px;
+}
+
+.grid-box-3:hover{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+}
+
+.grid-box-3 h3{
+    font-size: 18px;
+}
+
+.grid-box-3 p{
+    text-align: center;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.grid-box-3:hover .fas{
+    color: #FF404C;
+}
+
+.last-grid-box-3{
+    border-right: none;
+}
+
+/*#####################################
+  ---------- 15. ICON BOXES. ----------
+  #####################################*/
+
+/* ========== #ICON BOXES STYLE 1 ========== */
+.icon-boxes{
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    text-align: center;
+    padding: 35px 20px 40px 20px; 
+}
+
+.fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    margin-bottom: 15px;   
+}
+
+.icon-boxes p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.icon-boxes h3{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ========== #ICON BOXES STYLE 2 ========== */
+
+.box-corner-shadow{
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    padding: 35px 15px 40px 15px;
+    position: relative;
+    text-align: center;
+}
+
+.box-corner-shadow .fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    margin-bottom: 15px;
+}
+
+.box-corner-shadow p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.box-corner-shadow h3{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.box-corner-shadow:before, .box-corner-shadow:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.box-corner-shadow:after{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/* ========== #ICON BOXES STYLE 3 ========== */
+
+.icon-boxes-shadow{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #F6F6F6;
+    padding: 35px 20px 40px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.icon-boxes-shadow:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.icon-boxes-shadow .fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    margin-bottom: 15px;
+}
+
+.icon-boxes-shadow p{
+    text-align: center;
+    line-height: 1.6;
+}
+
+.icon-boxes-shadow h3{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ========== #ICON BOXES STYLE 4 ========== */
+
+.icon-boxes-hover{
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    padding: 35px 20px 40px 20px;
+    transition: 0.8s;
+    text-align: center;
+}
+
+.icon-boxes-hover:hover{
+    width: 100%;
+    background: #FF404C;
+}
+
+.icon-boxes-hover .fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    line-height: 1.6;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.icon-boxes-hover:hover .fa-icon .fas{
+    font-size: 40px;
+    color: #FFF;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+.icon-boxes-hover p{
+    text-align: center;
+    line-height: 1.6;
+    transition: 0.3s;
+}
+
+.icon-boxes-hover h3{
+    transition: 0.3s;
+}
+
+.icon-boxes-hover:hover p{
+    color: #FFF;
+}
+
+.icon-boxes-hover:hover h3{
+    color: #FFF;
+}
+
+/* ========== #ICON BOXES STYLE 5 ========== */
+
+.boxes-bottom-hover{
+    width: 100%;
+    height: 100%;
+    background: #F6F6F6;
+    padding: 35px 20px 40px 20px;
+    transition: 0.8s;
+    border-bottom: solid 2px #F6F6F6;
+    text-align: center;
+}
+
+.boxes-bottom-hover:hover{
+    width: 100%;
+    border-bottom: solid 2px #00a4e6;
+}
+
+.boxes-bottom-hover .fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    line-height: 1.6;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.boxes-bottom-hover p{
+    line-height: 1.6;
+}
+
+.boxes-bottom-hover h3{
+    text-align: center;
+    transition: 0.8s;
+}
+
+.boxes-bottom-hover:hover h3{
+    color: #00a4e6;
+}
+
+/* ========== #ICON BOXES STYLE 5 ========== */
+
+.left-corner-shadow{
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+    padding: 35px 20px 40px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.left-corner-shadow .fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    line-height: 1.6;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.left-corner-shadow p{
+    line-height: 1.6;
+}
+
+.left-corner-shadow h3{
+    margin-bottom: 10px;
+}
+
+.left-corner-shadow{
+  position: relative;
+}
+
+.left-corner-shadow:before{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/* ========== #ICON BOXES STYLE 5 ========== */
+
+.right-corner-shadow{
+    width: 100%;
+    height: 100%;
+    background: #f0f0f0;
+    padding: 35px 20px 40px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.right-corner-shadow .fa-icon .fas{
+    font-size: 40px;
+    color: #00a4e6;
+    line-height: 1.6;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.right-corner-shadow p{
+    line-height: 1.6;
+}
+
+.right-corner-shadow h3{
+    margin-bottom: 10px;
+}
+
+.right-corner-shadow:{
+  position: relative;
+}
+
+.right-corner-shadow:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+
+/*######################################
+  ---------- 16. ICON CIRCLE. ----------
+  #####################################*/
+
+/* ========== #CENTERED ICON CIRCLE ========== */
+.box-icon-circle{
+    text-align: center;
+}
+
+.box-icon-circle .icon-circle{
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border: solid #FF404C 1px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto auto 20px;
+    transition: 0.3s;
+}
+
+.box-icon-circle:hover{
+    cursor: pointer;
+}
+
+.box-icon-circle:hover .icon-circle{
+    background: #FF404C;
+}
+
+.box-icon-circle:hover .icon-circle .fas{
+    color: #FFF;
+}
+
+.box-icon-circle .icon-circle .fas{
+    font-size: 35px;
+    line-height: 70px;
+    background: transparent;
+    color: #FF404C;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.box-icon-circle p{
+    line-height: 1.6;
+}
+
+p.read-more{
+    margin-top: 10px;
+    color: #FF404C;
+    line-height: 1.6;
+}
+
+p.read-more:after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f101";
+    color: #FF404C;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* ========== LEFT ICON CIRCLE ========== */
+.left-icon-box{
+    cursor: pointer;
+}
+
+.left-icon-box .icon-circle{
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border: solid #FF404C 1px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto auto 20px;
+    transition: 0.3s;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+
+.left-icon-box .icon-circle .fas{
+    font-size: 35px;
+    line-height: 70px;
+    background: transparent;
+    color: #FF404C;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.left-icon-box h3{
+    margin-bottom: 5px;
+}
+
+.left-icon-box p{
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.left-icon-box:hover .icon-circle{
+    background: #FF404C;
+}
+
+.left-icon-box:hover .icon-circle .fas{
+    color: #FFF;
+}
+
+/* ========== RIGHT ICON CIRCLE ========== */
+.right-icon-box{
+    cursor: pointer;
+    text-align: right;
+}
+
+.right-icon-box .icon-circle{
+    width: 70px;
+    height: 70px;
+    background: #FFF;
+    border: solid #FF404C 1px;
+    border-radius: 50%;
+    position: relative;
+    margin: auto auto 20px;
+    transition: 0.3s;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.right-icon-box .icon-circle .fas{
+    font-size: 35px;
+    line-height: 70px;
+    background: transparent;
+    color: #FF404C;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.right-icon-box h3{
+    margin-bottom: 5px;
+}
+
+.right-icon-box p{
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.right-icon-box:hover .icon-circle{
+    background: #FF404C;
+}
+
+.right-icon-box:hover .icon-circle .fas{
+    color: #FFF;
+}
+
+/*#########################################
+  ---------- 17. IMAGE LIGHTBOX. ----------
+  #########################################*/
+
+
+/*###################################
+  ---------- 18. ELEMENT. ----------
+  ###################################*/
+
+/*###################################
+  ---------- 19. ELEMENT. ----------
+  ###################################*/
+
+/*###################################
+  ---------- 20. ELEMENT. ----------
+  ###################################*/
+
+/*###################################
+  ---------- 21. ELEMENT. ----------
+  ###################################*/
+
+/*###################################
+  ---------- 22. ELEMENT. ----------
+  ###################################*/
+
+/*###################################
+  ---------- 23. ELEMENT. ----------
+  ###################################*/
+
+/*########################################
+  ---------- 24. PRICING TABLE. ----------
+  ########################################*/
+.pricing-table{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    padding-bottom: 1.5rem;
+    background-color: #FFF;
+}
+
+.table-header{
+   padding: 1.5rem 0rem 0.5rem;
+}
+
+.center-table{
+    border: solid 3px #FF404C;
+}
+
+.table-header h3{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 0.80rem;
+    margin-bottom: 10px;    
+}
+
+.pt-price{
+    margin-top: -15px;
+}
+
+.pt-currency {
+    display: inline-block;
+    margin-top: 30px;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 500;
+    color: #c3d0d5;
+}
+
+.pt-value{
+    font-size: 2.5rem;
+}
+
+.pt-duration{
+    color: #c3d0d5;
+    font-weight: 500;
+}
+
+.pt-duration::before {
+    content: '/';
+    margin-right: 5px;
+    color: #c3d0d5;
+}
+
+.pricing-features li {
+    list-style-type: none;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.pricing-features li strong{
+    font-weight: 500;
+}
+
+.pricing-features li:nth-of-type(2n+1) {
+    background-color: rgba(23, 61, 80, 0.06);
+}
+
+/*---------- FULL WIDTH PRICING TABLE ---------- */
+.fw-pricing-table{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    padding-bottom: 2.5rem;
+    background-color: #FFF;
+    background: #3aa0d1;
+    background: -webkit-linear-gradient( bottom , #3aa0d1, #3ad2d1);
+    background: linear-gradient(to top, #3aa0d1, #3ad2d1);
+    border: none;
+}
+
+.fw-pricing-table .table-header{
+   padding: 2.5rem 0rem 0.5rem;
+}
+
+
+.fw-pricing-table .pricing-features li:nth-of-type(2n+1) {
+    background-color: transparent;
+}
+
+.fw-pricing-table .pricing-features li{
+    color: #FFF;
+}
+
+.fw-pricing-table .pt-currency {
+    color: #FFF;
+}
+
+.fw-pricing-table .pt-duration::before {
+    content: '/';
+    margin-right: 5px;
+    color: #FFF;
+}
+
+.fw-pricing-table .pt-duration{
+    color: #FFF;
+    font-weight: 500;
+}
+
+.fw-pricing-table .table-header h3{
+    color: #FFF;   
+}
+
+.fw-pricing-table .pt-value{
+    font-size: 2.5rem;
+    color: #FFF;
+}
+
+.color-center{
+    background: #e97d68;
+    background: -webkit-linear-gradient( bottom , #e97d68, #e99b68);
+    background: linear-gradient(to top, #e97d68, #e99b68);
+}
+
+/*---------- SHADOW PRICING TABLE ---------- */
+.shadow-pricing-table{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    padding-bottom: 1.5rem;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -moz-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -o-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+}
+
+.shadow-pricing-table .table-header{
+   padding: 1.5rem 0rem 0.5rem;
+}
+
+.shadow-center-table{
+    border: none;
+}
+
+.shadow-pricing-table .table-header h3{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-size: 0.80rem;
+    margin-bottom: 10px;    
+}
+
+.shadow-pricing-table .pt-price{
+    margin-top: -15px;
+}
+
+.shadow-pricing-table .pt-currency {
+    display: inline-block;
+    margin-top: 30px;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 500;
+    color: #c3d0d5;
+}
+
+.shadow-pricing-table .pt-value{
+    font-size: 2.5rem;
+}
+
+.shadow-pricing-table .pt-duration{
+    color: #c3d0d5;
+    font-weight: 500;
+}
+
+.shadow-pricing-table .pt-duration::before {
+    content: '/';
+    margin-right: 5px;
+    color: #c3d0d5;
+}
+
+.shadow-pricing-table .pricing-features li {
+    list-style-type: none;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.shadow-pricing-table .pricing-features li strong{
+    font-weight: 500;
+}
+
+.shadow-pricing-table .pricing-features li:nth-of-type(2n+1) {
+    background-color: rgba(23, 61, 80, 0.06);
+}
+
+/*########################################
+  ---------- 26. PROFILE CARDS. ----------
+  ########################################*/
+.bg-profile-card{
+    max-width: 400px;
+    background: #FFF;
+    box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -moz-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    -o-box-shadow: 0 0 10px rgba(204,204,204,0.6);
+    margin: auto;
+}
+
+.header-bg img{
+    width: 100%;
+}
+
+.circle-avatar{
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 20px;
+}
+
+.circle-avatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card-caption{
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.card-caption p{
+    text-align: center;
+    padding: 0px 20px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.card-location{
+    margin: 15px auto;
+}
+
+.card-location p{
+    text-align: center;
+}
+
+.social-panel{
+    margin: 0px;
+}
+
+.followers-panel, .following-panel{
+    text-align: center;
+    margin: 0px;
+    padding: 12px 5px 7px;
+    border-top: solid 1px #DDD;
+}
+
+.followers-panel{
+    border-right: solid 1px #DDD;
+}
+
+.social-panel h4{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.follow-btn{
+    background-color: #FF404C;
+    height: 48px;
+    text-align: center;
+    padding: 15px 0px;
+    transition: 0.3s;
+}
+
+.follow-btn h5{
+    color: #FFF;
+    font-size: 16px;
+}
+
+.follow-btn:hover{
+    background-color: #ff1a29;
+}
+
+/*---------- HEXAGON BORDER ---------- */
+.hexa, .hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 130px;
+  height: 128px;
+}
+.hexa {
+  width: 130px;
+  height: 101px;
+    margin: -50px auto 20px;
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
+}
+
+/*---------- ESQUARE BORDER ---------- */
+.esquare-avatar{
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 20px;
+}
+
+.esquare-avatar img{
+    width: 100%;
+}
+
+/*###################################
+  ---------- 25. ELEMENT. ----------
+  ###################################*/
+
+/*###################################
+  ---------- 26. ELEMENT. ----------
+  ###################################*/
+
+
+
+
+/*###################################
+  ---------- MEDIA QUERIES ----------
+  ###################################*/
+
+
+@media (max-width:1200px) { 
+.grid-box{
+    padding: 2rem 1rem;
+}
+}
+
+@media (max-width:992px) { 
+    
+/*---------- CALL TO ACTION ---------- */
+    
+ .call-to-action{
+    height: 100%;
+    padding: 2rem 1.8rem 1.8rem;
+}
+
+.call-left, .call-right{
+    float: none;
+    padding: 0rem;
+    text-align: center;
+}
+    
+.call-right{
+    margin-top: 10px;
+}
+   
+/*---------- CONTENT BOXES  STYLE 5 ---------- */
+    
+.info-box{
+    padding: 40px 20px 40px;
+}
+    
+.left-icon-circle{
+    float: none;
+    margin: auto auto 20px; 
+    width: 80px;
+    height: 80px;
+}
+    
+.left-icon-circle .fas{
+    font-size: 40px;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+
+}
+    
+.box-caption{
+    text-align: center;
+}
+    
+/*---------- COUNTER ---------- */   
+.tablet-view{
+    margin-top: 1rem;
+}
+
+/*---------- CUSTOMERS ---------- */ 
+.bottom-col{
+    margin-top: 1.5rem;
+}
+   
+/*---------- FLIP BOX ---------- */ 
+.flip-container, .front, .back {
+	height: 240px;
+}
+    
+ /*---------- GRID BOXES ---------- */    
+.center-grid{
+    border-left: none;
+    border-right: none;
+}
+    
+.bottom-grid, .bottom-grid-2{
+    border-bottom: solid 1px #ddd;
+}   
+    
+.last-grid-box{
+    border-bottom: none;
+}
+    
+.grid-box-3{
+    border-right: none;
+    border-bottom: solid 1px #ddd;
+}
+    
+/*---------- PRICING TABLE ---------- */      
+.shadow-center-table{
+    margin: 2rem 0rem;
+}
+   
+}
+
+@media (max-width:768px) { 
+.tablet-view, .movil-view{
+    margin-top: 1.5rem;
+}
+   
+/*---------- CUSTOMERS ---------- */ 
+.movil-grid{
+    border-right: none;
+}
+    
+.tablet-bottom{
+    border-bottom: dotted 1px #ddd;
+}
+    
+.top-col{
+    margin-top: 1.5rem;
+}
+    
+    
+}
+
+@media (max-width:576px) { 
+    
+}
+
+@media (max-width:480px) { 
+    
+}
